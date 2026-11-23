@@ -23,4 +23,4 @@ android.archs = arm64-v8a
 android.wakelock = True
 android.services = Forwarder:service/main.py:foreground
 fullscreen = 0
-p4a.branch = master
+p4a.branch = v2024.01.21
