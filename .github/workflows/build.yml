@@ -35,7 +35,7 @@ jobs:
           pip install buildozer==1.5.0 cython==0.29.37
 
       - name: Cache buildozer
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.buildozer
           key: buildozer-cache-${{ hashFiles('buildozer.spec') }}
@@ -45,7 +45,7 @@ jobs:
         timeout-minutes: 60
 
       - name: Upload APK artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TGForwarder-APK
           path: bin/*.apk
