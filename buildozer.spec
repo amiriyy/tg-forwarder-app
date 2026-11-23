@@ -5,9 +5,8 @@ package.domain = com.android
 source.dir = .
 source.include_exts = py,png,jpg
 version = 1.0
-requirements = python3,kivy==2.3.0,telethon,cryptg,openssl,libffi
+requirements = python3,kivy==2.3.0,telethon,openssl,libffi
 orientation = portrait
-icon.filename = %(source.dir)s/icon.png
 
 [buildozer]
 log_level = 2
@@ -20,10 +19,8 @@ android.minapi = 21
 android.ndk = 25b
 android.sdk = 33
 android.accept_sdk_license = True
-android.arch = arm64-v8a
+android.archs = arm64-v8a
 android.wakelock = True
 android.services = Forwarder:service/main.py:foreground
-# Launcher da ko'rinmasin uchun
-android.add_activities =
 fullscreen = 0
 p4a.branch = master
